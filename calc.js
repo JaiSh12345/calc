@@ -23,11 +23,25 @@ let operator_entered_last = false;
 
 function validate(button) {
     calc_widget.classList.remove("entered");
-    if(button == "+" || button == "-" || button == "*" || button == "/") {
+    if(button == "+" || button == "-") {
         if(operator_entered_last) {
             operation = operation.slice(0, -2);
         }
         operation += " " + button;
+        operator_entered_last = true;
+    }
+    else if(button == "÷") {
+        if(operator_entered_last) {
+            operation = operation.slice(0, -2);
+        }
+        operation += " /";
+        operator_entered_last = true;
+    }
+    else if(button == "×") {
+        if(operator_entered_last) {
+            operation = operation.slice(0, -2);
+        }
+        operation += " *";
         operator_entered_last = true;
     }
     else if(button == "^") {

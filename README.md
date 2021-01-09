@@ -16,7 +16,8 @@ This is a web based calculator, with a twist!
 
 >Changelog
 >---
-
+- Version 0.4
+  - Fixed bug in multiplication and division
 - Version 0.3
   - Added Calculator Widget
   - Minor formatting
