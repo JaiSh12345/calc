@@ -1,0 +1,18 @@
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 10vh);
+}
+#calculator input {
+    grid-column: 1 / 5;
+    text-align: right;
+}
+#calculator button {
+    cursor: pointer;
+}
+#calculator.entered #delete, #calculator #clear {
+    display: none;
+}
+#calculator #delete, #calculator.entered #clear {
+    display: block;
+}

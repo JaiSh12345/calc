@@ -72,5 +72,5 @@ body:nth-child(2) {
     display: none;
 }
 .card.opened #calculator {
-    display: block;
+    display: grid;
 }
