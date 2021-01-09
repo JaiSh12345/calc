@@ -1,4 +1,5 @@
 Simple Calculator App
+===
 
 Practice for HTML, JS and CSS
 

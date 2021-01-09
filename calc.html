@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps : Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calc.css">
 </head>
 <body>
-    Web Calculator
+    <div class="header"><h1>Apps</h1></div>
+    <div id="calc-widget" class="card">
+        <img src="res/calc.png" alt="calc-app"><br>
+        <span class="close-widget">x</span>
+        Calculator
+        <div id="calculator">
+            <input type="text" disabled>
+        </div>
+    </div>
+    <script src="calc.js"></script>
 </body>
 </html>

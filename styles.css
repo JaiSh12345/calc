@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(121, 121, 240);
+}
+
+.header {
+    color: rgb(70, 18, 119);
+}
+
+body:nth-child(2) {
+    left: 8px;
+    top: 100px;
+}
+
+.card {
+    width: 25vw;
+    position: absolute;
+    cursor: pointer;
+    font-size: large;
+    color: blue;
+    text-align: center;
+    border-radius: 10vh;
+    background-color: aquamarine;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    transition-duration: 0.5s;
+}
+.card img {
+    display: block;
+    height: 25vh;
+    width: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card.opened {
+    cursor: auto;
+    left: 70px;
+    top: 40px;
+    width: 80vw;
+    height: 80vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.card.opened:hover {
+    transform: none;
+}
+.card.opened img {
+    display: none;
+}
+.card .close-widget {
+    color: red;
+    display: none;
+    cursor: pointer;
+    background-color: wheat;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+}
+.card.opened .close-widget {
+    display: block;
+    float: right;
+    transition-duration: 0.5s;
+}
+.card.opened .close-widget:hover {
+    transform: scale(2);
+}
+.card #calculator {
+    display: none;
+}
+.card.opened #calculator {
+    display: block;
+}
